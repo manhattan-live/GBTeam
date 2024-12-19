@@ -1,0 +1,99 @@
+/* Размеры текста для проектов */
+.title-semibold {
+    font-family: 'Onest', sans-serif;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+.text-regular {
+    font-family: 'Onest', sans-serif;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+}
+
+.subtitle-regular {
+    font-family: 'Onest', sans-serif;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+/* Colors main */
+.bg-white { background-color: #FFFFFF; }
+.text-white { color: #FFFFFF; }
+
+.bg-black { background-color: #000000; }
+.text-black { color: #000000; }
+
+.bg-primary { background-color: #1D72FA; }
+.text-primary { color: #1D72FA; }
+
+.bg-gray { background-color: #81889C; }
+.text-gray { color: #81889C; }
+
+.bg-light-gray { background-color: #F5F5F8; }
+.text-light-gray { color: #F5F5F8; }
+
+/* Colors second */
+.bg-gray-light { background-color: #E6E7EB; }
+.text-gray-light { color: #E6E7EB; }
+
+.bg-gray-lighter { background-color: #F7F8FC; }
+.text-gray-lighter { color: #F7F8FC; }
+
+.bg-blue-light { background-color: #E9F1FF; }
+.text-blue-light { color: #E9F1FF; }
+
+/* Colors system */
+.bg-error { background-color: #C31100; }
+.text-error { color: #C31100; }
+
+.bg-error-light { background-color: #F9E8E6; }
+.text-error-light { color: #F9E8E6; }
+
+.bg-success { background-color: #55AE1D; }
+.text-success { color: #55AE1D; }
+
+.bg-success-light { background-color: #E9F1FF; }
+.text-success-light { color: #E9F1FF; }
+
+.bg-warning { background-color: #9C8181; }
+.text-warning { color: #9C8181; }
+
+.bg-warning-light { background-color: #FCF7F7; }
+.text-warning-light { color: #FCF7F7; }
+
+.bg-alert { background-color: #F4AA1A; }
+.text-alert { color: #F4AA1A; }
+
+.shadow-sm {
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06) !important;
+}
+
+.card {
+    background: #FFFFFF;
+    border: 1px solid #E6E7EB;
+}
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.tag {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: 'Onest', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.tag-planning {
+  background: rgba(18, 183, 106, 0.1);
+  color: #12B76A;
+  font-weight: 500;
+}
+
+.tag-default {
+  background-color: #F5F5F8;
+  color: #81889C;
+}

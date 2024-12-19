@@ -9,69 +9,56 @@
         <%- await include('/partials/header1', Object.assign({}, locals)) %>
     </header>
 
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Left Sidebar -->
-            <div class="col-md-3">
-                <div class="p-4">
-                    <div class="d-flex justify-content-between align-items-center mb-4">
-                        <h5 class="mb-0" style="font-family: 'Onest', sans-serif; font-weight: 500;">Проекты</h5>
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch">
-                        </div>
-                    </div>
+    <div class="container-fluid px-4 py-4 bg-light-gray">
+        <div class="container mx-auto" style="max-width: 1440px;">
+            <div class="row g-4">
+                <!-- Левая колонка -->
+                <div class="col-12 col-lg-4" style="max-width: 440px;">
+                    <!-- Сюда будем вставлять контент левой колонки -->
+                    <div class="card rounded-4 shadow-sm border">
+                        <div class="card-body p-4">
+                            <div class="d-flex gap-4">
+                                <!-- Logo -->
+                                <div class="flex-shrink-0 d-flex align-items-center">
+                                    <img src="logo-check.svg" alt="" class="rounded-3" style="width: 48px; height: 48px;">
+                                </div>
 
-                    <div class="dropdown mb-4 w-100">
-                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-start" type="button" data-bs-toggle="dropdown">
-                            По дате создания
-                        </button>
-                    </div>
+                                <!-- Content -->
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-2 title-semibold">Разработка корпоративного онлайн-казино для сотрудников</h6>
+                                    <p class="mb-3 text-gray subtitle-regular">СберКоннект - это инновационный корпоративный портал, разрабатываемый для ПАО Сбербанк. Проект направлен на улучшение внутренней коммуникации и п...</p>
 
-                    <div class="card mb-3">
-                        <div class="card-body p-3">
-                            <div class="d-flex gap-3">
-                                <img src="logo-check.svg" alt="" class="rounded" style="width: 48px; height: 48px; flex-shrink: 0;">
-                                <div>
-                                    <h6 class="card-title mb-2" style="font-family: 'Onest', sans-serif; font-weight: 500;">Разработка корпоративного онлайн-казино для сотрудников</h6>
-                                    <p class="text-muted small mb-3" style="font-family: 'Onest', sans-serif;">СберКоннект - это инновационный корпоративный портал, разрабатываемый для ПАО Сбербанк...</p>
-
-                                    <div class="d-flex align-items-center mb-3">
-                                        <div class="d-flex -space-x-2">
-                                            <img class="rounded-circle border-2 border-white" style="width: 32px; height: 32px; margin-right: -8px;" src="/api/placeholder/32/32" alt="">
-                                            <img class="rounded-circle border-2 border-white" style="width: 32px; height: 32px; margin-right: -8px;" src="/api/placeholder/32/32" alt="">
-                                            <img class="rounded-circle border-2 border-white" style="width: 32px; height: 32px; margin-right: -8px;" src="/api/placeholder/32/32" alt="">
-                                            <img class="rounded-circle border-2 border-white" style="width: 32px; height: 32px; margin-right: 4px;" src="/api/placeholder/32/32" alt="">
-                                            <span class="d-flex align-items-center justify-content-center rounded-circle bg-primary text-white border-2 border-white" style="width: 32px; height: 32px;">11</span>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="d-flex">
+                                                <img class="rounded-circle border-2 border-white position-relative" style="width: 24px; height: 24px; margin-right: -8px; z-index: 4;" src="/api/placeholder/24/24" alt="">
+                                                <img class="rounded-circle border-2 border-white position-relative" style="width: 24px; height: 24px; margin-right: -8px; z-index: 3;" src="/api/placeholder/24/24" alt="">
+                                                <img class="rounded-circle border-2 border-white position-relative" style="width: 24px; height: 24px; margin-right: -8px; z-index: 2;" src="/api/placeholder/24/24" alt="">
+                                                <img class="rounded-circle border-2 border-white position-relative" style="width: 24px; height: 24px; margin-right: 8px; z-index: 1;" src="/api/placeholder/24/24" alt="">
+                                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary text-white" style="width: 24px; height: 24px;">11</div>
+                                            </div>
+                                            <div class="d-inline-block px-3 py-2 rounded-3 bg-gray-lighter text-gray subtitle-regular">
+                                                Завершён вне платформы
+                                            </div>
                                         </div>
                                     </div>
-
-                                    <span class="badge bg-light text-dark" style="font-family: 'Onest', sans-serif;">Завершён вне платформы</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Main Content -->
-            <div class="col-md-9 bg-light">
-                <div class="card m-4">
-                    <div class="card-body">
+                <!-- Правая колонка -->
+                <div class="col-12 col-lg-8" style="max-width: 900px;">
+                    <!-- Сюда будем вставлять контент правой колонки -->
+                    <div class="card rounded-4 shadow-sm border bg-white p-4">
                         <div class="d-flex justify-content-between align-items-start mb-4">
-                            <div class="d-flex gap-4">
-                                <img src="logo-main.svg" alt="" class="rounded" style="width: 56px; height: 56px; flex-shrink: 0;">
-                                <div>
-                                    <h4 class="mb-2" style="font-family: 'Onest', sans-serif; font-weight: 500;">Система мгновенных платежей интегрированная с Visa</h4>
-                                    <div class="d-flex align-items-center gap-2 text-muted small" style="font-family: 'Onest', sans-serif;">
-                                        <span class="text-primary">✓ Carment</span>
-                                        <span>•</span>
-                                        <span>Корпоративный портал</span>
-                                        <span>•</span>
-                                        <span>San Francisco, CA</span>
-                                        <span>•</span>
-                                        <span>2 дня назад</span>
-                                    </div>
+                            <div class="d-flex gap-4 align-items-center">
+                                <!-- Logo -->
+                                <div class="flex-shrink-0">
+                                    <img src="logo-check.svg" alt="" class="rounded-3" style="width: 48px; height: 48px;">
                                 </div>
+                                <h1 style="font-size: 20px;" class="title-semibold mb-0">Система мгновенных платежей интегрированная с Visa</h1>
                             </div>
                             <div class="d-flex gap-2">
                                 <button class="btn btn-light"><i class="fas fa-link"></i></button>
@@ -79,6 +66,7 @@
                             </div>
                         </div>
 
+                        <!-- Теги -->
                         <div class="d-flex flex-wrap gap-3 mt-4">
                             <span class="px-3 py-2 rounded-pill" style="background: rgba(18, 183, 106, 0.1); color: #12B76A; font-family: 'Onest', sans-serif; font-weight: 500;">Стадия планирования</span>
                             <span class="px-3 py-2 rounded-pill bg-light text-muted" style="font-family: 'Onest', sans-serif;">12+ месяцев</span>
@@ -86,6 +74,7 @@
                             <span class="px-3 py-2 rounded-pill bg-light text-muted" style="font-family: 'Onest', sans-serif;">Старт 01.01.2025</span>
                         </div>
 
+                        <!-- Навигация -->
                         <div class="border-bottom mt-4">
                             <div class="d-flex">
                                 <a href="#" data-tab="details" class="tab-link active px-4 pb-3 border-bottom border-primary text-primary text-decoration-none" style="font-family: 'Onest', sans-serif;">
@@ -100,7 +89,7 @@
                             </div>
                         </div>
 
-
+                        <!-- Контент табов -->
                         <div id="details" class="tab-content">
                             <div class="mt-4">
                                 <h5 class="mb-3" style="font-family: 'Onest', sans-serif; font-weight: 500;">Описание:</h5>
@@ -152,7 +141,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Сюда добавим контент вкладки "Рабочие места" -->
                         <div id="jobs" class="tab-content d-none">
                             <div class="row mb-4 align-items-center">
@@ -277,11 +265,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="border-top border-1"></div>
                 </div>
             </div>
         </div>
     </div>
+
     <script>
         // JavaScript код для переключения
         document.addEventListener('DOMContentLoaded', function() {
