@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <base href="/">
+    <script src="/dmxAppConnect/dmxAppConnect.js"></script>
+    <meta charset="UTF-8">
+    <title>Find Job</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/bootstrap/5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer></script>
+    <script src="/dmxAppConnect/dmxRouting/dmxRouting.js" defer></script>
+</head>
+
+<body is="dmx-app" id="Header">
+    <!-- Начало header -->
+    <header class="border-bottom bg-white">
+        <div class="container">
+            <div class="row py-3 align-items-center">
+                <!-- Логотип и название -->
+                <div class="col-auto d-flex align-items-center">
+                    <div class="rounded-3 me-2" style="width: 36px; height: 36px; background-color: #4777EA"></div>
+                    <span class="fs-5 fw-medium">Find Job</span>
+                </div>
+
+                <!-- Навигация -->
+                <nav class="col">
+                    <ul class="nav justify-content-center mb-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#">Вакансии</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#">Проекты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#">Мои сообщения</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="MyProjects" internal="true">Мои проекты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Профиль пользователя -->
+                <div class="col-auto d-flex align-items-center">
+                    <div class="rounded-circle me-2" style="width: 36px; height: 36px; background-color: #E5E7EB"></div>
+                    <div>
+                        <div class="small fw-medium">Клара Ивельцевич</div>
+                        <div class="small text-secondary">Back-end</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Конец header -->
+
+    <div is="dmx-view" id="content">
+        <dmx-view id="content"></dmx-view>
+    </div>
+    <script src="/bootstrap/5/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

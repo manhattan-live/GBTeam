@@ -1,0 +1,108 @@
+<!-- Wappler include fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="Projects" appConnect="local" -->
+<!-- Wappler include head-page="layouts/Header" fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="Projects" appConnect="local" -->
+<meta name="ac:route" content="/Projects">
+
+<header>
+    <%- await include('/partials/header1', Object.assign({}, locals)) %>
+</header>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Место для фильтров -->
+        <div class="col-md-3">
+            <%- await include('/partials/Filters', Object.assign({}, locals)) %>
+            <!-- Здесь будет подключен компонент фильтров -->
+        </div>
+
+        <!-- Основной контент -->
+        <div class="col-md-9 bg-light p-4">
+            <!-- Поиск -->
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0">
+                            <i class="fas fa-search text-muted"></i>
+                        </span>
+                        <input type="text" class="form-control border-start-0" placeholder="Поиск по названиям проектов">
+                        <button class="btn btn-primary px-4">Найти проект</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-muted mb-4">250 проектов найдено</div>
+
+            <!-- Карточка проекта -->
+            <div class="repeatable">
+                <div class="card border-0 rounded-4 shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <!-- Header -->
+                        <div class="d-flex justify-content-between align-items-start mb-4">
+                            <div class="d-flex gap-3">
+                                <img src="/path-to-check-icon.svg" alt="" class="rounded-circle bg-light p-3" width="64" height="64">
+                                <div>
+                                    <h5 class="fs-5 fw-medium mb-2">Разработка корпоративного онлайн-казино для сотрудников<br></h5>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <a href="#" class="text-primary text-decoration-none">СБЕРБАНК</a>
+                                        <span class="text-muted">•</span>
+                                        <span class="text-muted">Не подтверждён</span>
+                                        <span class="text-muted">•</span>
+                                        <span class="text-muted">Корпоративный портал</span>
+                                        <span class="text-muted">•</span>
+                                        <span class="text-muted"><i class="fas fa-map-marker-alt me-1"></i>San Francisco, CA</span>
+                                        <span class="text-muted">•</span>
+                                        <span class="text-muted"><i class="far fa-clock me-1"></i>2 дня назад</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <button class="btn btn-outline-primary btn-sm px-3 py-2">
+                                    <i class="far fa-bookmark"></i>
+                                </button>
+                                <a href="#" class="btn btn-primary btn-sm px-3">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <!-- Tags -->
+                        <div class="d-flex flex-wrap gap-2 mb-4">
+                            <span class="badge rounded-pill bg-light-pink text-dark px-3 py-2">Завершён вне платформы</span>
+                            <span class="badge rounded-pill bg-light text-dark px-3 py-2">12+ месяцев</span>
+                            <span class="badge rounded-pill bg-light text-dark px-3 py-2">Финтех</span>
+                            <span class="badge rounded-pill bg-light text-dark px-3 py-2">Старт 01.01.2024</span>
+                        </div>
+
+                        <!-- Description -->
+                        <h6 class="mb-2">Описание:</h6>
+                        <p class="text-dark mb-4">СберКоннект - это инновационный корпоративный портал, разрабатываемый для ПАО Сбербанк. Проект направлен на улучшение внутренней коммуникации и повышение эффективности работы сотрудников банка. Ключевые особенности включают: единую точку доступа к корпоративным сервисам, систему управления задачами</p>
+
+                        <!-- Footer -->
+                        <div class="d-flex align-items-center gap-3">
+                            <!-- Левая часть (картинки) -->
+                            <div class="d-flex">
+                                <img src="image1.jpg" alt="" class="rounded" style="width: 64px; height: 64px; object-fit: cover;">
+                                <img src="image2.jpg" alt="" class="rounded ms-2" style="width: 64px; height: 64px; object-fit: cover;">
+                                <img src="image3.jpg" alt="" class="rounded ms-2" style="width: 64px; height: 64px; object-fit: cover;">
+                                <img src="image4.jpg" alt="" class="rounded ms-2" style="width: 64px; height: 64px; object-fit: cover;">
+                                <img src="image5.jpg" alt="" class="rounded ms-2" style="width: 64px; height: 64px; object-fit: cover;">
+                            </div>
+
+                            <!-- Правая часть (аватары и текст) -->
+                            <div class="d-flex align-items-center ms-auto gap-2">
+                                <div class="d-flex" style="min-width: 160px;">
+                                    <img src="avatar1.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px; margin-right: -10px; z-index: 4;">
+                                    <img src="avatar2.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px; margin-right: -10px; z-index: 3;">
+                                    <img src="avatar3.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px; margin-right: -10px; z-index: 2;">
+                                    <img src="avatar4.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px; margin-right: -10px; z-index: 1;">
+                                    <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary text-white" style="width: 40px; height: 40px; z-index: 0;">11</div>
+                                </div>
+                                <div>
+                                    <div class="text-primary">3 свободных вакансии</div>
+                                    <a href="#" class="text-primary text-decoration-none">Узнать подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

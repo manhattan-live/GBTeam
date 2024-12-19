@@ -1,0 +1,314 @@
+<!-- Wappler include head-page="layouts/main" fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="Mproj" appConnect="local" -->
+<!DOCTYPE html>
+<html>
+<!-- Wappler include head-page="layouts/Header" fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="MyProjects" appConnect="local" -->
+<meta name="ac:route" content="/Mproj">
+
+<body>
+    <header>
+        <%- await include('/partials/header1', Object.assign({}, locals)) %>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left Sidebar -->
+            <div class="col-md-3">
+                <div class="p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h5 class="mb-0" style="font-family: 'Onest', sans-serif; font-weight: 500;">Проекты</h5>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch">
+                        </div>
+                    </div>
+
+                    <div class="dropdown mb-4 w-100">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-start" type="button" data-bs-toggle="dropdown">
+                            По дате создания
+                        </button>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-body p-3">
+                            <div class="d-flex gap-3">
+                                <img src="logo-check.svg" alt="" class="rounded" style="width: 48px; height: 48px; flex-shrink: 0;">
+                                <div>
+                                    <h6 class="card-title mb-2" style="font-family: 'Onest', sans-serif; font-weight: 500;">Разработка корпоративного онлайн-казино для сотрудников</h6>
+                                    <p class="text-muted small mb-3" style="font-family: 'Onest', sans-serif;">СберКоннект - это инновационный корпоративный портал, разрабатываемый для ПАО Сбербанк...</p>
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="d-flex -space-x-2">
+                                            <img class="rounded-circle border-2 border-white" style="width: 32px; height: 32px; margin-right: -8px;" src="/api/placeholder/32/32" alt="">
+                                            <img class="rounded-circle border-2 border-white" style="width: 32px; height: 32px; margin-right: -8px;" src="/api/placeholder/32/32" alt="">
+                                            <img class="rounded-circle border-2 border-white" style="width: 32px; height: 32px; margin-right: -8px;" src="/api/placeholder/32/32" alt="">
+                                            <img class="rounded-circle border-2 border-white" style="width: 32px; height: 32px; margin-right: 4px;" src="/api/placeholder/32/32" alt="">
+                                            <span class="d-flex align-items-center justify-content-center rounded-circle bg-primary text-white border-2 border-white" style="width: 32px; height: 32px;">11</span>
+                                        </div>
+                                    </div>
+
+                                    <span class="badge bg-light text-dark" style="font-family: 'Onest', sans-serif;">Завершён вне платформы</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9 bg-light">
+                <div class="card m-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-4">
+                            <div class="d-flex gap-4">
+                                <img src="logo-main.svg" alt="" class="rounded" style="width: 56px; height: 56px; flex-shrink: 0;">
+                                <div>
+                                    <h4 class="mb-2" style="font-family: 'Onest', sans-serif; font-weight: 500;">Система мгновенных платежей интегрированная с Visa</h4>
+                                    <div class="d-flex align-items-center gap-2 text-muted small" style="font-family: 'Onest', sans-serif;">
+                                        <span class="text-primary">✓ Carment</span>
+                                        <span>•</span>
+                                        <span>Корпоративный портал</span>
+                                        <span>•</span>
+                                        <span>San Francisco, CA</span>
+                                        <span>•</span>
+                                        <span>2 дня назад</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-light"><i class="fas fa-link"></i></button>
+                                <button class="btn btn-light"><i class="fas fa-cog"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <span class="px-3 py-2 rounded-pill" style="background: rgba(18, 183, 106, 0.1); color: #12B76A; font-family: 'Onest', sans-serif; font-weight: 500;">Стадия планирования</span>
+                            <span class="px-3 py-2 rounded-pill bg-light text-muted" style="font-family: 'Onest', sans-serif;">12+ месяцев</span>
+                            <span class="px-3 py-2 rounded-pill bg-light text-muted" style="font-family: 'Onest', sans-serif;">Финтех</span>
+                            <span class="px-3 py-2 rounded-pill bg-light text-muted" style="font-family: 'Onest', sans-serif;">Старт 01.01.2025</span>
+                        </div>
+
+                        <div class="border-bottom mt-4">
+                            <div class="d-flex">
+                                <a href="#" data-tab="details" class="tab-link active px-4 pb-3 border-bottom border-primary text-primary text-decoration-none" style="font-family: 'Onest', sans-serif;">
+                                    <i class="far fa-file-alt me-2"></i>Детали проекта
+                                </a>
+                                <a href="#" data-tab="jobs" class="tab-link px-4 pb-3 text-muted text-decoration-none" style="font-family: 'Onest', sans-serif;">
+                                    <i class="fas fa-users me-2"></i>Рабочие места и вакансии
+                                </a>
+                                <a href="#" data-tab="team" class="tab-link px-4 pb-3 text-muted text-decoration-none" style="font-family: 'Onest', sans-serif;">
+                                    <i class="fas fa-user-friends me-2"></i>Участники и роли
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div id="details" class="tab-content">
+                            <div class="mt-4">
+                                <h5 class="mb-3" style="font-family: 'Onest', sans-serif; font-weight: 500;">Описание:</h5>
+                                <p class="text-muted mb-4" style="font-family: 'Onest', sans-serif;">СберКоннект - это инновационный корпоративный портал, разрабатываемый для ПАО Сбербанк. Проект направлен на улучшение внутренней коммуникации и повышение эффективности работы сотрудников банка. Ключевые особенности включают: единую точку доступа к корпоративным сервисам, систему управления задачами</p>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="mb-0" style="font-family: 'Onest', sans-serif; font-weight: 500;">Медиа проекта:</h5>
+                                    <button class="btn btn-outline-primary" style="font-family: 'Onest', sans-serif;">
+                                        <i class="fas fa-plus me-2"></i>Добавить новый файл
+                                    </button>
+                                </div>
+                                <div class="row g-3">
+                                    <div class="col"><img src="/api/placeholder/200/150" class="img-fluid rounded" alt=""></div>
+                                    <div class="col"><img src="/api/placeholder/200/150" class="img-fluid rounded" alt=""></div>
+                                    <div class="col"><img src="/api/placeholder/200/150" class="img-fluid rounded" alt=""></div>
+                                    <div class="col"><img src="/api/placeholder/200/150" class="img-fluid rounded" alt=""></div>
+                                    <div class="col"><img src="/api/placeholder/200/150" class="img-fluid rounded" alt=""></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="mb-0" style="font-family: 'Onest', sans-serif; font-weight: 500;">Файлы проекта:</h5>
+                                    <button class="btn btn-outline-primary" style="font-family: 'Onest', sans-serif;">
+                                        <i class="fas fa-plus me-2"></i>Добавить новый файл
+                                    </button>
+                                </div>
+                                <div class="list-group">
+                                    <div class="list-group-item bg-light border rounded mb-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <h6 class="mb-1" style="font-family: 'Onest', sans-serif; font-weight: 500;">ТЗ на разработку от заказчика</h6>
+                                                <small class="text-muted" style="font-family: 'Onest', sans-serif;">222 KB • xlsx</small>
+                                            </div>
+                                            <button class="btn btn-light btn-sm">•••</button>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item bg-light border rounded">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <h6 class="mb-1" style="font-family: 'Onest', sans-serif; font-weight: 500;">Пак иконок для вебки и для мо...</h6>
+                                                <small class="text-muted" style="font-family: 'Onest', sans-serif;">1.4 GB • fig</small>
+                                            </div>
+                                            <button class="btn btn-light btn-sm">•••</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Сюда добавим контент вкладки "Рабочие места" -->
+                            <div id="jobs" class="tab-content d-none">
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col">
+                                        <h2 class="h5 mb-0">Рабочие места:</h2>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button class="btn btn-link text-primary p-0">
+                                            <span class="fs-4">+</span>
+                                            Добавить новое место
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row g-4 mb-4">
+                                    <!-- Fullstack Developer Card -->
+                                    <div class="col-4">
+                                        <div class="card h-100">
+                                            <div class="card-body position-relative">
+                                                <h5 class="card-title h6 mb-3">Fullstack Developer</h5>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="/api/placeholder/32/32" class="rounded-circle me-2" width="32" height="32">
+                                                    <div>
+                                                        <span class="text-body">Виктор Русаков</span>
+                                                        <small class="text-success ms-2">• Подтверждён</small>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-link position-absolute top-50 end-0 translate-middle-y p-3">
+                                                    <i class="fas fa-ellipsis-v text-muted"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- UX/UI Designer Card -->
+                                    <div class="col-4">
+                                        <div class="card h-100">
+                                            <div class="card-body position-relative">
+                                                <h5 class="card-title h6 mb-3">UX/UI Designer</h5>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="/api/placeholder/32/32" class="rounded-circle me-2" width="32" height="32">
+                                                    <div>
+                                                        <span class="text-body">Adam Johnson</span>
+                                                        <small class="text-muted ms-2">• Ожидает ответа</small>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-link position-absolute top-50 end-0 translate-middle-y p-3">
+                                                    <i class="fas fa-ellipsis-v text-muted"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Second UX/UI Designer Card -->
+                                    <div class="col-4">
+                                        <div class="card h-100">
+                                            <div class="card-body position-relative">
+                                                <h5 class="card-title h6 mb-3">UX/UI Designer</h5>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="rounded-circle bg-light d-flex align-items-center justify-content-center me-2" style="width: 32px; height: 32px;">
+                                                        <span class="text-muted">?</span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-body">Elina Bordulova</span>
+                                                        <small class="text-muted ms-2">• Приглашён</small>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-link position-absolute top-50 end-0 translate-middle-y p-3">
+                                                    <i class="fas fa-ellipsis-v text-muted"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Back-end Developer Card -->
+                                    <div class="col-4">
+                                        <div class="card h-100">
+                                            <div class="card-body position-relative">
+                                                <h5 class="card-title h6 mb-3 text-primary">Back-end Developer</h5>
+                                                <span class="text-muted">Свободная вакансия</span>
+                                                <button class="btn btn-link position-absolute top-50 end-0 translate-middle-y p-3">
+                                                    <i class="fas fa-ellipsis-v text-muted"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Empty Workplace Card -->
+                                    <div class="col-4">
+                                        <div class="card h-100 bg-primary bg-opacity-10 border-0">
+                                            <div class="card-body">
+                                                <h5 class="card-title h6 mb-3">Пустое рабочее место</h5>
+                                                <a href="#" class="text-primary text-decoration-none">Назначить вакансию</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Сюда добавим контент вкладки "Участники" -->
+                                <div id="team" class="tab-content d-none">
+                                    <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <img src="/api/placeholder/48/48" alt="" class="rounded-circle" style="width: 48px; height: 48px;">
+                                            <div>Виктор Русаков</div>
+                                            <div class="text-secondary">Viktor1973@gmail.com</div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3">
+                                            <button class="btn btn-outline-secondary rounded-pill px-4">Участник <i class="fas fa-chevron-down ms-2"></i></button>
+                                            <i class="fas fa-user-cog text-secondary"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <img src="/api/placeholder/48/48" alt="" class="rounded-circle" style="width: 48px; height: 48px;">
+                                            <div>Виктор Русаков</div>
+                                            <div class="text-secondary">Viktor1973@gmail.com</div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="text-primary">Админ</div>
+                                            <i class="fas fa-user-cog text-secondary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-top border-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // JavaScript код для переключения
+        document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.tab-link');
+    
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            tabs.forEach(t => {
+                t.classList.remove('active', 'border-bottom', 'border-primary', 'text-primary');
+                t.classList.add('text-muted');
+            });
+            
+            this.classList.add('active', 'border-bottom', 'border-primary', 'text-primary');
+            this.classList.remove('text-muted');
+            
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.add('d-none');
+            });
+            
+            const contentId = this.getAttribute('data-tab');
+            document.getElementById(contentId).classList.remove('d-none');
+        });
+    });
+});
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!-- Wappler include fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="Filters" appConnect="local" -->
+<!-- /partials/filters.ejs -->
+<div class="bg-white p-4 rounded-3 shadow-sm">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h5 class="mb-0">Фильтры</h5>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" checked>
+        </div>
+    </div>
+
+    <!-- Формат работы -->
+    <div class="mb-4">
+        <h6 class="mb-3">Формат работы</h6>
+        <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="remote" checked>
+            <label class="form-check-label text-secondary" for="remote">Удалённая</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="office">
+            <label class="form-check-label text-secondary" for="office">Офис</label>
+        </div>
+    </div>
+
+    <!-- Занятость -->
+    <div class="mb-4">
+        <h6 class="mb-3">Занятость</h6>
+        <select class="form-select bg-light border-0">
+            <option selected>Выбрать</option>
+        </select>
+    </div>
+
+    <!-- Оплата -->
+    <div class="mb-4">
+        <h6 class="mb-3">Оплата</h6>
+        <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="fixed" checked>
+            <label class="form-check-label text-secondary" for="fixed">Фиксированная</label>
+        </div>
+        <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="piece">
+            <label class="form-check-label text-secondary" for="piece">Сдельная</label>
+        </div>
+        <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="hourly">
+            <label class="form-check-label text-secondary" for="hourly">Почасовая</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="project">
+            <label class="form-check-label text-secondary" for="project">Проектная</label>
+        </div>
+    </div>
+
+    <!-- Оплата в месяц -->
+    <div class="mb-4">
+        <h6 class="mb-3">Оплата в месяц, $</h6>
+        <div class="row g-2">
+            <div class="col">
+                <input type="text" class="form-control bg-light border-0" placeholder="мин.">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control bg-light border-0" placeholder="макс.">
+            </div>
+        </div>
+    </div>
+
+    <!-- Оплата в час -->
+    <div class="mb-4">
+        <h6 class="mb-3">Оплата в час, $</h6>
+        <div class="row g-2">
+            <div class="col">
+                <input type="text" class="form-control bg-light border-0" value="350">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control bg-light border-0" value="1250">
+            </div>
+        </div>
+    </div>
+
+    <!-- Отрасль -->
+    <div class="mb-4">
+        <h6 class="mb-3">Отрасль</h6>
+        <select class="form-select bg-light border-0">
+            <option selected>Финтех</option>
+        </select>
+    </div>
+
+    <!-- Квалификация -->
+    <div class="mb-4">
+        <h6 class="mb-3">Квалификация</h6>
+        <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="junior" checked>
+            <label class="form-check-label text-secondary" for="junior">Junior</label>
+        </div>
+        <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="middle">
+            <label class="form-check-label text-secondary" for="middle">Middle</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="senior">
+            <label class="form-check-label text-secondary" for="senior">Senior</label>
+        </div>
+    </div>
+</div>
