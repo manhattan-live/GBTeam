@@ -97,3 +97,32 @@
   background-color: #F5F5F8;
   color: #81889C;
 }
+.fs-14 {
+ font-size: 14px;
+ font-family: 'Onest', sans-serif;
+ font-weight: 400;
+}
+
+.menu-item {
+ color: #81889C;
+ cursor: pointer;
+ transition: all 0.2s;
+}
+
+.menu-item:hover {
+ background-color: #E9F1FF;
+ color: #1D72FA;
+}
+
+.menu-item.danger {
+ background-color: #F9E8E6;
+ color: #C31100;
+}
+
+.rounded-4 {
+ border-radius: 1rem;
+}
+
+.modal-container {
+ max-height: 184px;
+}
