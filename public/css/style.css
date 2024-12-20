@@ -126,3 +126,35 @@
 .modal-container {
  max-height: 184px;
 }
+.menu-item {
+  color: #81889C;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 0;
+}
+
+.menu-item:hover {
+  background-color: #F7F8FC;
+  color: #000000;
+}
+
+.menu-item:hover svg {
+  color: #000000;
+}
+
+.menu-item.danger {
+  color: #C31100;
+}
+
+.menu-item.danger:hover {
+  background-color: #F9E8E6;
+  color: #C31100;
+}
+
+.menu-item.danger:hover svg {
+  color: #C31100;
+}
+
+.card.rounded-4 {
+  overflow: hidden;
+}

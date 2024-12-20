@@ -202,7 +202,7 @@
                                                     <small class="text-success ms-2">• Подтверждён</small>
                                                 </div>
                                             </div>
-                                            <button class="btn btn-link position-absolute top-50 end-0 translate-middle-y p-3">
+                                            <button class="btn btn-link position-absolute top-50 end-0 translate-middle-y p-3" data-bs-toggle="modal" data-bs-target="#menuModal">
                                                 <i class="fas fa-ellipsis-v text-muted"></i>
                                             </button>
                                         </div>
@@ -332,6 +332,7 @@
     });
 });
     </script>
+    <%- await include('/partials/ModalMenu') %>
 </body>
 
 </html>
