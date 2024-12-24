@@ -1,0 +1,156 @@
+<!-- Wappler include fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="tempDropdown" appConnect="local" -->
+<!-- Меню -->
+<div class="menu-container profile-menu">
+    <!-- Информация о пользователе -->
+    <div class="d-flex align-items-center menu-item p-3">
+        <img src="/api/placeholder/40/40" class="avatar me-3" alt="Клара Ивельцевич">
+        <div class="d-flex flex-column">
+            <span class="title-semibold text-black">Клара Ивельцевич</span>
+            <span class="text-success" style="font-size: 12px;">Готов к работе</span>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Carment team -->
+    <div class="d-flex align-items-center menu-item p-3">
+        <div class="company-logo me-3">
+            <img src="/api/placeholder/24/24" alt="Carment team">
+        </div>
+        <div class="d-flex flex-column">
+            <span class="subtitle-regular text-black">Carment team</span>
+            <span class="text-primary" style="font-size: 12px;">Перейти в бизнес профиль</span>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Переключить статус -->
+    <div class="d-flex align-items-center menu-item" style="height: 44px; padding: 0 16px;">
+        <svg class="me-3" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M9.99984 18.3333C14.6022 18.3333 18.3332 14.6024 18.3332 10C18.3332 5.39763 14.6022 1.66667 9.99984 1.66667C5.39746 1.66667 1.6665 5.39763 1.6665 10C1.6665 14.6024 5.39746 18.3333 9.99984 18.3333Z" stroke="currentColor" stroke-width="1.67" />
+        </svg>
+        <span class="subtitle-regular">Переключить статус</span>
+    </div>
+
+    <!-- Избранные вакансии -->
+    <div class="d-flex align-items-center menu-item" style="height: 44px; padding: 0 16px;">
+        <svg class="me-3" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M5.83333 2.5H14.1667C14.8297 2.5 15.4656 2.76339 15.9344 3.23223C16.4033 3.70107 16.6667 4.33696 16.6667 5V17.5L10 14.1667L3.33333 17.5V5C3.33333 4.33696 3.59672 3.70107 4.06556 3.23223C4.53439 2.76339 5.17029 2.5 5.83333 2.5Z" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span class="subtitle-regular">Избранные вакансии и проекты</span>
+    </div>
+
+    <!-- Перейти в мой профиль -->
+    <div class="d-flex align-items-center menu-item" style="height: 44px; padding: 0 16px;">
+        <svg class="me-3" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10.0002 9.16667C11.8412 9.16667 13.3335 7.67428 13.3335 5.83333C13.3335 3.99238 11.8412 2.5 10.0002 2.5C8.15921 2.5 6.66683 3.99238 6.66683 5.83333C6.66683 7.67428 8.15921 9.16667 10.0002 9.16667Z" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M16.6668 17.5V15.8333C16.6668 14.9493 16.3156 14.1014 15.6905 13.4763C15.0654 12.8512 14.2175 12.5 13.3335 12.5H6.66683C5.78277 12.5 4.93493 12.8512 4.30981 13.4763C3.68469 14.1014 3.3335 14.9493 3.3335 15.8333V17.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span class="subtitle-regular">Перейти в мой профиль</span>
+    </div>
+
+    <!-- Сменить язык -->
+    <div class="d-flex align-items-center menu-item" style="height: 44px; padding: 0 16px;">
+        <img src="/path-to-flag.svg" class="me-3" width="20" height="20" alt="RU">
+        <span class="subtitle-regular">Сменить язык</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Выйти -->
+    <div class="d-flex align-items-center menu-item danger" style="height: 44px; padding: 0 16px;">
+        <svg class="me-3" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M15 5.83333L13.825 7.00833L15.475 8.66667H6.66667V10.3333H15.475L13.825 11.9833L15 13.1667L18.3333 9.83333L15 6.5V5.83333Z" fill="currentColor" />
+            <path d="M12.5 2.5H3.33333C2.875 2.5 2.5 2.875 2.5 3.33333V16.6667C2.5 17.125 2.875 17.5 3.33333 17.5H12.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span class="subtitle-regular">Выйти из аккаунта</span>
+    </div>
+</div>
+
+<style>
+    /* Размеры текста */
+    .title-semibold {
+        font-family: 'Onest', sans-serif;
+        font-size: 16px !important;
+        font-weight: 600 !important;
+    }
+
+    .subtitle-regular {
+        font-family: 'Onest', sans-serif;
+        font-size: 14px !important;
+        font-weight: 400 !important;
+    }
+
+    .profile-menu .menu-item.danger {
+        color: #C31100;
+    }
+
+    .profile-menu .menu-item.danger svg {
+        color: #C31100;
+    }
+
+    /* Стили меню */
+    .menu-container {
+        width: 285px;
+        background: #FFFFFF;
+        border-radius: 1rem;
+        box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+    }
+
+    .menu-item {
+        color: #81889C;
+        cursor: pointer;
+        transition: all 0.2s;
+        border-radius: 0;
+    }
+
+    .menu-item:hover {
+        background-color: #F7F8FC;
+        color: #000000;
+    }
+
+    .menu-item:hover svg {
+        color: #000000;
+    }
+
+    .menu-item.danger:hover {
+        background-color: #F9E8E6;
+        color: #C31100;
+    }
+
+    .menu-item.danger:hover svg {
+        color: #C31100;
+    }
+
+    .divider {
+        height: 1px;
+        background-color: #E6E7EB;
+        margin: 0;
+    }
+
+    .text-primary {
+        color: #1D72FA !important;
+    }
+
+    .text-success {
+        color: #55AE1D !important;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .company-logo {
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        background: #F5F5F8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>

@@ -1,12 +1,14 @@
 <!-- Wappler include fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="Projects" appConnect="local" -->
 <!-- Wappler include head-page="layouts/Header" fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="Projects" appConnect="local" -->
 <meta name="ac:route" content="/Projects">
+<link rel="stylesheet" href="/bootstrap/5/css/bootstrap.min.css">
+<script src="/bootstrap/5/js/bootstrap.bundle.min.js" defer></script>
 
 <header>
     <%- await include('/partials/header1', Object.assign({}, locals)) %>
 </header>
 
-<div class="container-fluid">
+<div class="container pt-4">
     <div class="row">
         <!-- Место для фильтров -->
         <div class="col-md-3">
@@ -15,7 +17,7 @@
         </div>
 
         <!-- Основной контент -->
-        <div class="col-md-9 bg-light p-4">
+        <div class="col-md-9 bg-light p-4 rounded">
             <!-- Поиск -->
             <div class="row mb-4">
                 <div class="col">

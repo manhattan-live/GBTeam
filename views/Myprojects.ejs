@@ -377,48 +377,57 @@
     </div>
 
     <script>
-        console.log('Скрипт загружен');
         document.addEventListener('DOMContentLoaded', function() {
-   // Табы
-   const tabs = document.querySelectorAll('.tab-link');
-   tabs.forEach(tab => {
-       tab.addEventListener('click', function(e) {
-           e.preventDefault();
-           tabs.forEach(t => {
-               t.classList.remove('active', 'border-bottom', 'border-primary', 'text-primary');
-               t.classList.add('text-muted');
-           });
-           this.classList.add('active', 'border-bottom', 'border-primary', 'text-primary');
-           this.classList.remove('text-muted');
-           
-           document.querySelectorAll('.tab-content').forEach(content => {
-               content.classList.add('d-none');
-           });
-           
-           const contentId = this.getAttribute('data-tab');
-           document.getElementById(contentId).classList.remove('d-none');
-       });
-   });
+    // Табы
+    const tabs = document.querySelectorAll('.tab-link');
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function(e) {
+            e.preventDefault();
+            tabs.forEach(t => {
+                t.classList.remove('active', 'border-bottom', 'border-primary', 'text-primary');
+                t.classList.add('text-muted');
+            });
+            this.classList.add('active', 'border-bottom', 'border-primary', 'text-primary');
+            this.classList.remove('text-muted');
+            
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.add('d-none');
+            });
+            
+            const contentId = this.getAttribute('data-tab');
+            document.getElementById(contentId).classList.remove('d-none');
+        });
+    });
 
-   // Дропдаун
-   const dropdownButtons = document.querySelectorAll('.card .btn-link');
-dropdownButtons.forEach(button => {
-    button.addEventListener('click', function(e) {
-        e.preventDefault();
-        const card = this.closest('.card');
-        if (card) {
-            const menu = card.querySelector('.dropdown-menu');
-            if (menu) {
-                const rect = this.getBoundingClientRect();
-                menu.style.position = 'fixed';
-                menu.style.top = `${rect.top}px`;
-                menu.style.left = `${rect.right}px`;
-                menu.style.zIndex = '1050';
-                menu.classList.toggle('show');
+    // Дропдаун
+    const dropdownButtons = document.querySelectorAll('.card .btn-link');
+    dropdownButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            const card = this.closest('.card');
+            if (card) {
+                const menu = card.querySelector('.dropdown-menu');
+                if (menu) {
+                    const rect = this.getBoundingClientRect();
+                    menu.style.position = 'fixed';
+                    menu.style.top = `${rect.top}px`;
+                    menu.style.left = `${rect.right}px`;
+                    menu.style.zIndex = '1050';
+                    menu.classList.toggle('show');
+                }
             }
+        });
+    });
+
+    // Закрытие дропдауна при клике вне области
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.btn-link')) {
+            document.querySelectorAll('.card .dropdown-menu').forEach(menu => {
+                menu.classList.remove('show');
+            });
         }
     });
-   });
 });
     </script>
 </body>

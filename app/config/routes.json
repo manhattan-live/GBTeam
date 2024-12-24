@@ -1,14 +1,25 @@
 {
   "routes": [
     {
-      "path": "/",
-      "page": "index",
-      "routeType": "page",
+      "path": "/Vacancy",
+      "page": "Vacancy",
+      "layout": "main",
+      "name": "Vacancy"
+    },
+    {
+      "path": "/Projects",
+      "name": "Projects",
+      "page": "Projects",
       "layout": "main"
     },
     {
       "path": "/Myprojects",
       "page": "Myprojects",
+      "layout": "main"
+    },
+    {
+      "path": "/tempHeader",
+      "page": "tempHeader",
       "layout": "Test"
     }
   ]
