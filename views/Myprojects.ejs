@@ -74,7 +74,7 @@
                 <!-- Правая колонка -->
                 <div class="col-12 col-lg-8" style="max-width: 900px;">
                     <!-- Сюда будем вставлять контент правой колонки -->
-                    <div class="card rounded-4 shadow-sm border bg-white p-4">
+                    <div class="card rounded-4 shadow-sm border bg-white" style="padding: 24px 32px;">
                         <div class="d-flex justify-content-between align-items-start mb-4">
                             <div class="d-flex gap-4">
                                 <!-- Logo -->
@@ -83,7 +83,7 @@
                                 </div>
                                 <!-- Title and metadata -->
                                 <div>
-                                    <h1 style="font-size: 20px;" class="title-semibold mb-2">Система мгновенных платежей интегрированная с Visa</h1>
+                                    <h1 class="title-semibold mb-2" style="font-size: 20px; line-height: 28px;">Система мгновенных платежей интегрированная с Visa</h1>
                                     <div class="d-flex align-items-center gap-2 text-gray subtitle-regular">
                                         <span class="text-primary">✓ Carment</span>
                                         <span>•</span>
@@ -95,18 +95,34 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex gap-2">
-                                <button class="btn btn-light"><i class="fas fa-link"></i></button>
-                                <button class="btn btn-light"><i class="fas fa-cog"></i></button>
+                            <div class="d-flex gap-3">
+                                <button class="btn btn-light d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; padding: 0; border-radius: 12px;">
+                                    <img src="/assets/icons/eye-disable.svg" alt="link" width="20" height="20">
+                                </button>
+                                <button class="btn btn-light d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; padding: 0; border-radius: 12px;">
+                                    <img src="/assets/icons/setting.svg" alt="settings" width="20" height="20">
+                                </button>
                             </div>
                         </div>
 
                         <!-- Теги -->
-                        <div class="d-flex flex-wrap gap-3 mt-4">
-                            <span class="px-3 py-2 rounded-pill" style="background: rgba(18, 183, 106, 0.1); color: #12B76A; font-family: 'Onest', sans-serif; font-weight: 500;">Стадия планирования</span>
-                            <span class="px-3 py-2 rounded-pill bg-light text-muted" style="font-family: 'Onest', sans-serif;">12+ месяцев</span>
-                            <span class="px-3 py-2 rounded-pill bg-light text-muted" style="font-family: 'Onest', sans-serif;">Финтех</span>
-                            <span class="px-3 py-2 rounded-pill bg-light text-muted" style="font-family: 'Onest', sans-serif;">Старт 01.01.2025</span>
+                        <div class="d-flex flex-wrap gap-3">
+                            <!-- Зеленый тег -->
+                            <div class="tag tag-planning">
+                                Стадия планирования
+                            </div>
+                            <!-- Серый тег 1 -->
+                            <div class="tag tag-default">
+                                12+ месяцев
+                            </div>
+                            <!-- Серый тег 2 -->
+                            <div class="tag tag-default">
+                                Финтех
+                            </div>
+                            <!-- Серый тег 3 -->
+                            <div class="tag tag-default">
+                                Старт 01.01.2025
+                            </div>
                         </div>
 
                         <!-- Навигация -->

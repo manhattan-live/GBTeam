@@ -94,9 +94,9 @@
 }
 
 .tag-planning {
-   background: rgba(18, 183, 106, 0.1);
-   color: #12B76A;
-   font-weight: 500;
+  background: rgba(85, 174, 29, 0.1); /* 10% от #55AE1D */
+  color: #55AE1D; /* 100% цвет */
+  font-weight: 500;
 }
 
 .tag-default {
