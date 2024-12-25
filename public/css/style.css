@@ -1,4 +1,10 @@
 /* Размеры текста для проектов */
+.project-title {
+   font-family: 'Onest', sans-serif;
+   font-size: 20px;
+   line-height: 28px;
+   font-weight: 600;
+}
 .title-semibold {
    font-family: 'Onest', sans-serif;
    font-size: 16px !important;
@@ -100,8 +106,16 @@
 }
 
 .tag-default {
-   background-color: #F5F5F8;
-   color: #81889C;
+  background-color: #F7F8FC; /* Новый цвет фона */
+  color: #81889C; /* Цвет текста */
+}
+.tags-wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 12px;
+}
+.tab-link.active img {
+    filter: invert(34%) sepia(97%) saturate(3021%) hue-rotate(211deg) brightness(99%) contrast(98%);
 }
 
 .fs-14 {
