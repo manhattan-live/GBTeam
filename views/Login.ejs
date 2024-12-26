@@ -133,40 +133,37 @@
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    function togglePassword() {
-        const passwordInput = document.getElementById('_18_10292');
-        if (passwordInput.type === 'password') {
-            passwordInput.type = 'text';
-        } else {
-            passwordInput.type = 'password';
-        }
-    }
-
-    const emailInput = document.getElementById('_18_10287');
+    // Исходный рабочий код для переключения пароля
+function togglePassword() {
     const passwordInput = document.getElementById('_18_10292');
-    const loginButton = document.getElementById('_18_10305_wrapper');
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+    } else {
+        passwordInput.type = 'password';
+    }
+}
 
-    if (emailInput && passwordInput && loginButton) {  // Проверка на существование элементов
-        function checkInputs() {
+// Отдельный код для активации кнопки
+const emailInput = document.getElementById('_18_10287');
+const passwordInput = document.getElementById('_18_10292');
+const loginButton = document.getElementById('_18_10305_wrapper');
+
+function checkInputs() {
     if (emailInput.value.length > 0 && passwordInput.value.length > 0) {
         loginButton.removeAttribute('disabled');
         loginButton.style.backgroundColor = '#1D72FA';
         loginButton.style.opacity = '1';
-        loginButton.style.border = 'none';  // Убираем границу
+        loginButton.style.border = 'none';
+        loginButton.style.borderRadius = '12px';
     } else {
         loginButton.setAttribute('disabled', '');
         loginButton.style.backgroundColor = 'rgba(29, 114, 250, 0.5)';
         loginButton.style.opacity = '0.5';
-        loginButton.style.border = 'none';  // Убираем границу и в неактивном состоянии
-        loginButton.style.borderRadius = '12px'
+        loginButton.style.border = 'none';
+        loginButton.style.borderRadius = '12px';
     }
 }
 
-        emailInput.addEventListener('input', checkInputs);
-        passwordInput.addEventListener('input', checkInputs);
-    } else {
-        console.error('One or more elements not found');  // Добавим логирование для отладки
-    }
-});
+emailInput.addEventListener('input', checkInputs);
+passwordInput.addEventListener('input', checkInputs);
 </script>
