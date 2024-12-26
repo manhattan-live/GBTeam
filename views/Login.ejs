@@ -27,28 +27,52 @@
                 <div class="d-flex" fid="18:10283" id="Frame_1707480454">
                     <div class="d-flex" fid="18:10284" id="Frame_1707480281">
                         <div fid="18:10285" id="Frame_1707480217">
-                            <div class="_18_10287_wrapper" fid="18:10287" fname="Email" id="_18_10287_wrapper">
-                                <span fid="18:10287" fname="Email" id="_18_10287">
-                                    Email
-                                </span>
+                            <div class="_18_10287_wrapper" fid="18:10287" fname="Email" id="_18_10287_wrapper" style="overflow: hidden;">
+                                <input type="email" id="_18_10287" name="email" placeholder="Email" style="
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: transparent;
+            font-family: inherit;
+            font-size: inherit;
+            color: inherit;
+            padding: 0 8px;
+            margin: inherit;
+            outline: none;
+            overflow: hidden;
+        " />
                             </div>
                         </div>
                         <div class="d-flex" fid="18:10288" id="Frame_1707480450">
-                            <div fid="18:10289" id="Frame_1707480284">
-                                <div fid="18:10291" fname="Frame 1707480449" id="_18_10291">
-                                    <span fid="18:10292" fname="Пароль" id="_18_10292">
-                                        Пароль
-                                    </span>
-                                    <div class="Icon_grid" fid="18:10293" fname="eye" id="_18_10293">
-                                        <div fid="I18:10293;251:10546" fname="Icon" id="_I18_10293-251_10546">
-                                            <svg fill="none" height="14" viewbox="0 0 18 14" width="18" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M0.974945 7.21503C0.860865 7.0344 0.803825 6.94408 0.771894 6.80477C0.74791 6.70013 0.74791 6.53511 0.771894 6.43047C0.803825 6.29116 0.860865 6.20085 0.974945 6.02021C1.91767 4.52749 4.72377 0.753906 9.00009 0.753906C13.2764 0.753906 16.0825 4.52749 17.0252 6.02021C17.1393 6.20085 17.1964 6.29116 17.2283 6.43047C17.2523 6.53511 17.2523 6.70013 17.2283 6.80477C17.1964 6.94408 17.1393 7.0344 17.0252 7.21503C16.0825 8.70775 13.2764 12.4813 9.00009 12.4813C4.72377 12.4813 1.91767 8.70775 0.974945 7.21503Z" stroke="#81889C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-                                                </path>
-                                                <path d="M9.00009 9.13064C10.388 9.13064 11.5131 8.00552 11.5131 6.61762C11.5131 5.22972 10.388 4.1046 9.00009 4.1046C7.61219 4.1046 6.48707 5.22972 6.48707 6.61762C6.48707 8.00552 7.61219 9.13064 9.00009 9.13064Z" stroke="#81889C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                    </div>
+                            <div fid="18:10289" id="Frame_1707480284" style="overflow: hidden;">
+                                <div fid="18:10291" fname="Frame 1707480449" id="_18_10291" style="position: relative;">
+                                    <input type="password" id="_18_10292" name="password" placeholder="Пароль" style="
+                width: 100%;
+                height: 100%;
+                border: none;
+                background: transparent;
+                font-family: inherit;
+                font-size: inherit;
+                color: inherit;
+                padding: 0 8px;
+                outline: none;
+                overflow: hidden;
+            " />
+                                    <button onclick="togglePassword()" style="
+                position: absolute;
+                right: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+                background: none;
+                border: none;
+                padding: 0;
+                cursor: pointer;
+            ">
+                                        <svg fill="none" height="14" viewbox="0 0 18 14" width="18" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.974945 7.21503C0.860865 7.0344 0.803825 6.94408 0.771894 6.80477C0.74791 6.70013 0.74791 6.53511 0.771894 6.43047C0.803825 6.29116 0.860865 6.20085 0.974945 6.02021C1.91767 4.52749 4.72377 0.753906 9.00009 0.753906C13.2764 0.753906 16.0825 4.52749 17.0252 6.02021C17.1393 6.20085 17.1964 6.29116 17.2283 6.43047C17.2523 6.53511 17.2523 6.70013 17.2283 6.80477C17.1964 6.94408 17.1393 7.0344 17.0252 7.21503C16.0825 8.70775 13.2764 12.4813 9.00009 12.4813C4.72377 12.4813 1.91767 8.70775 0.974945 7.21503Z" stroke="#81889C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                            <path d="M9.00009 9.13064C10.388 9.13064 11.5131 8.00552 11.5131 6.61762C11.5131 5.22972 10.388 4.1046 9.00009 4.1046C7.61219 4.1046 6.48707 5.22972 6.48707 6.61762C6.48707 8.00552 7.61219 9.13064 9.00009 9.13064Z" stroke="#81889C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
                             <div class="d-flex" fid="18:10294" id="Frame_1707480283">
@@ -75,11 +99,12 @@
                     </div>
                     <div fid="18:10302" fname="Frame 1707480451" id="_18_10302">
                         <div fid="18:10303" fname="Frame 1707480217" id="_18_10303">
-                            <div class="_18_10305_wrapper" fid="18:10305" fname="Войти" id="_18_10305_wrapper">
-                                <span fid="18:10305" fname="Войти" id="_18_10305">
-                                    Войти
-                                </span>
-                            </div>
+                            <button class="_18_10305_wrapper" id="_18_10305_wrapper" disabled style="
+        opacity: 0.5;
+        transition: all 0.3s ease;
+    ">
+                                <span id="_18_10305">Войти</span>
+                            </button>
                         </div>
                         <div fid="18:10306" fname="У вас ещё нет аккаунта? Зарегистрируйтесь" id="_18_10306" type="text-container">
                             <span class="_18_10306_0">У вас ещё нет аккаунта? </span><span class="_18_10306_1">Зарегистрируйтесь</span>
@@ -106,3 +131,28 @@
         </div>
     </div>
 </div>
+
+<script>
+    function togglePassword() {
+        const passwordInput = document.getElementById('_18_10292');
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+        } else {
+            passwordInput.type = 'password';
+        }
+    }
+    const emailInput = document.getElementById('_18_10287');
+    const passwordInput = document.getElementById('_18_10292');
+    const loginButton = document.getElementById('_18_10305_wrapper');
+
+    function checkInputs() {
+        if (emailInput.value.length > 0 && passwordInput.value.length > 0) {
+            loginButton.removeAttribute('disabled');
+        } else {
+            loginButton.setAttribute('disabled', '');
+        }
+    }
+
+    emailInput.addEventListener('input', checkInputs);
+    passwordInput.addEventListener('input', checkInputs);
+</script>
