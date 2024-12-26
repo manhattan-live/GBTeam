@@ -1,10 +1,22 @@
 {
   "Myprojects.ejs": {
-    "layoutPage": "Test",
+    "layoutPage": "main",
     "description": ""
   },
   "tempHeader.ejs": {
     "layoutPage": "Test",
+    "description": ""
+  },
+  "Enter.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "Vacancy.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "Projects.ejs": {
+    "layoutPage": "main",
     "description": ""
   }
 }
