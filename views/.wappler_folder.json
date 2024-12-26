@@ -18,5 +18,9 @@
   "Projects.ejs": {
     "layoutPage": "main",
     "description": ""
+  },
+  "Login.ejs": {
+    "layoutPage": "main",
+    "description": ""
   }
 }

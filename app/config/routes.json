@@ -21,6 +21,11 @@
       "path": "/tempHeader",
       "page": "tempHeader",
       "layout": "Test"
+    },
+    {
+      "path": "/Login",
+      "page": "Login",
+      "layout": "main"
     }
   ]
 }
